@@ -48,20 +48,21 @@
   <%= render 'resume_pages/topbar' %>
 </section>
 <section>
-  <%= render 'resume_pages/header' %>
+  <%= render 'resume_pages/head' %>
 </section>
 
-<section>
-  <%= render 'resume_pages/profile' %>
-</section>
+<div id="container" class="container">
+  <section>
+    <%= render 'resume_pages/profile' %>
+  </section>
 
-<section>
-  <%= render 'resume_pages/experience' %>
-</section>
+  <section>
+    <%= render 'resume_pages/experience' %>
+  </section>
 
-<section>
-  <%= render 'resume_pages/abilities' %>
-</section>
-
+  <section>
+    <%= render 'resume_pages/abilities' %>
+  </section>
+</div>
 </body>
 </html>
