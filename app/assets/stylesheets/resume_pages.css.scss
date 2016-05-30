@@ -12,12 +12,6 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 .btn-primary { background-color: #22A39F; border-color: #1c8784; }
 .btn-primary:hover { background-color: #1c8784;  border-color: #1c8784; }
 
-.icon { display: inline-block; background: url(images/sm_icon_sprite.png) no-repeat; height: 32px; width: 32px; }
-.icon.icon-twitter { background-position: 0px 0px; }
-.icon.icon-linkedin { background-position: 0px -32px; }
-.icon.icon-skype { background-position: 0px -64px; }
-.icon.icon-email { background-position: 0px -96px; }
-
 h1 {
   font-size: 46px;
   font-family: 'Open Sans', sans-serif !important;
@@ -74,6 +68,15 @@ p.lead {
   margin-left: auto;
   position: relative;
   max-width: 1280px;
+  padding: 0 80px 0 80px;
+}
+@media only screen and (max-width: 460px) {
+  .container{
+    padding: 0;
+  }
+  .container-fluid{
+    padding: 0;
+  }
 }
 
 .text-center {
@@ -81,6 +84,148 @@ p.lead {
 }
 
 ul.no-bullets {list-style-type: none;margin: 0px;padding: 0px;}
+
+// Section Head
+//---------------------------------//
+#section-head .container-fluid {
+  color: #fff;
+  position: relative;
+  padding: 200px;
+  z-index: 10;
+
+  background: no-repeat center fixed image-url('background2.jpg');
+  background-size: cover;
+  margin-bottom: 0px;
+  background-color: #708090;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.75;
+  filter:alpha(opacity=75);
+}
+
+#section-head .overlay {
+  background-color: #708090;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.75;
+  filter:alpha(opacity=75);
+}
+
+#section-head h1 {
+  text-align: center;
+  color: #fff;
+}
+
+#section-head p.lead {
+  text-align: center;
+  color: #fff;
+}
+
+#section-head hr {
+  margin: 40px 0px;
+  border-color: Gainsboro;
+  opacity: 1;
+  filter:alpha(opacity=20);
+}
+
+
+// Section Topbar
+//---------------------------------//
+
+#topbar-inner {
+    background: #111;
+    line-height: 0;
+    text-align: center;
+}
+
+#section-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    overflow: visible;
+    font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#section-topbar p.lead {
+  font-size: 18px;
+  color: Silver;
+  margin-bottom: 0px;
+}
+
+#section-topbar ul#nav {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #222;
+    /* For IE, the outcast */
+    zoom:1;
+    *display: inline;
+}
+
+#section-topbar ul#nav > li {
+    display: block;
+    float: left;
+    padding: 0;
+}
+
+#section-topbar ul#nav a {
+    display: block;
+    font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    border-left: 1px solid #222;
+}
+
+#section-topbar ul#nav a:hover {
+    background: #222;
+    text-decoration: none;
+    border-left: 1px solid #111;
+}
+
+#section-topbar ul#nav .active a {
+    background: #df4244;
+    border-left: 1px solid #111;
+}
+
+#section-topbar ul#nav .active a:hover {
+    background: #df4244;
+}
+@media only screen and (max-width: 460px) {
+    #section-topbar ul#nav img {
+        width:25px;
+    }
+    #section-topbar ul#nav a {
+        padding: 12px 12px 12px 12px;
+    }
+    #section-topbar ul#nav p.lead {
+      font-size: 100%;
+    }
+}
+
+/* jQuery UI tooltip for menu items */
+.ui-tooltip {
+    color: #eee;
+    background: #222;
+    padding: 10px 15px;
+    font: normal 300 12px/22px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    z-index: 9999;
+    max-width: 300px;
+}
+
+body .ui-tooltip {
+    border: none;
+}
 
 // Section Experience
 //---------------------------------//
@@ -135,129 +280,6 @@ ul.no-bullets {list-style-type: none;margin: 0px;padding: 0px;}
 #abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; }
 #abilities ul > li:hover { background: #F2F2F2; }
 
-// Section Head
-//---------------------------------//
-#section-head .jumbotron {
-  background: no-repeat center right fixed image-url('background2.jpg');
-  background-size: cover;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-
-#section-head .overlay {
-  background-color: #708090;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  opacity: 0.75;
-  filter:alpha(opacity=75);
-}
-
-#section-head .container {
-  color: #fff;
-  position: absolute;
-  padding: 200px;
-  z-index: 10;
-}
-
-#section-head h1 {
-  color: #fff;
-}
-
-#section-head p.lead {
-  text-align: center;
-  color: #fff;
-}
-
-
-// Section Topbar
-//---------------------------------//
-#section-topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    overflow: visible;
-    font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#topbar-inner {
-    background: #111;
-    line-height: 0;
-    text-align: center;
-}
-
-#section-topbar ul#nav {
-    display: inline-block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border-right: 1px solid #222;
-    /* For IE, the outcast */
-    zoom:1;
-    *display: inline;
-}
-
-#section-topbar ul#nav > li {
-    display: block;
-    float: left;
-    padding: 0;
-}
-
-
-#section-topbar ul#nav a {
-    display: block;
-    font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    padding: 18px 20px 18px 20px;
-    border-left: 1px solid #222;
-}
-
-#section-topbar ul#nav a:hover {
-    background: #222;
-    text-decoration: none;
-    border-left: 1px solid #111;
-}
-
-#section-topbar ul#nav .active a {
-    background: #df4244;
-    border-left: 1px solid #111;
-}
-
-#section-topbar ul#nav .active a:hover {
-    background: #df4244;
-}
-@media only screen and (max-width: 460px) {
-    #section-topbar ul#nav img {
-        width:25px;
-    }
-    #section-topbar ul#nav a {
-
-        padding: 12px 12px 12px 12px;
-
-    }
-}
-
-/* jQuery UI tooltip for menu items */
-.ui-tooltip {
-    color: #eee;
-    background: #222;
-    padding: 10px 15px;
-    font: normal 300 12px/22px 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: absolute;
-    z-index: 9999;
-    max-width: 300px;
-}
-
-body .ui-tooltip {
-    border: none;
-}
-
 // Section Profile
 //---------------------------------//
 #section-profile {
@@ -295,15 +317,20 @@ body .ui-tooltip {
 //---------------------------------//
 
 #section-contact {
-    background: Gray;
+    background: #434242;
     font: normal 16px/26px 'PT Serif', Georgia, serif;
     padding: 60px 0 20px 0;
 }
 
-#section-contact h2, #section-contact .row * {
-    color: #222;
+#section-contact h1 {
+    color: Gainsboro;
 }
 
-#section-contact h1, #section-contact p.lead {
-    color: #fff;
+#section-contact p.class {
+    color: Silver;
+}
+
+#section-contact span {
+    color: Silver;
+    padding-left: 20px;
 }
