@@ -34,225 +34,249 @@
   <div class="container-full">
 
 
-    <!-- Topbar section
-    ================================================== -->
-    <div id="section-topbar">
-            <div id="topbar-inner">
-              <ul id="nav" class="nav">
-                <li class="menu-item">
-                  <a href="#section-profile" title="Profile">
-                    <%= image_tag("icon/icon_profile.png", alt: 'Profile', class: "image") %>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#section-experience" title="Experience">
-                    <%= image_tag("icon/icon_works.png", alt: 'Experience', class: "image") %>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#section-resume" title="About">
-                    <%= image_tag("icon/icon_resume.png", alt: 'Profile', class: "image") %>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#section-resume" title="About">
-                    <%= image_tag("icon/icon_awards.png", alt: 'Profile', class: "image") %>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="#section-resume" title="About">
-                    <%= image_tag("icon/icon_testimonials.png", alt: 'Profile', class: "image") %>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="clear"></div>
-            <div class="clear"></div>
-        </div>
+<!-- Topbar section
+================================================== -->
+<div id="section-topbar">
+    <div id="topbar-inner">
+      <ul id="nav" class="nav">
+        <li class="menu-item">
+          <a href="#section-head" title="Antoine Petit">
+            <%= image_tag("icon/icon_profile.png", alt: 'Antoine Petit', class: "image") %>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#section-profile" title="Profile">
+            <%= image_tag("icon/icon_works.png", alt: 'Profile', class: "image") %>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#section-experience" title="Experience">
+            <%= image_tag("icon/icon_resume.png", alt: 'Experience', class: "image") %>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#abilities" title="Abilities">
+            <%= image_tag("icon/icon_awards.png", alt: 'Abilities', class: "image") %>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#section-contact" title="Contact">
+            <%= image_tag("icon/icon_testimonials.png", alt: 'Contact', class: "image") %>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="clear"></div>
+</div>
 
 
 
-    <!-- Head section
-    ================================================== -->
-    <div id="section-head">
-      <div class="jumbotron text-center">
-        <div class="container">
-          <h1>Antoine Petit</h1>
-          <hr>
-          <p class="lead">Resume</p>
-        </div>
-        <div class="overlay"></div>
+<!-- Head section
+================================================== -->
+<div id="section-head">
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1>Antoine Petit</h1>
+      <hr>
+      <p class="lead">Resume</p>
+    </div>
+    <div class="overlay"></div>
+  </div>
+</div>
+
+<!-- Profile section
+================================================== -->
+<div id="section-profile">
+  <div class="container">
+    <h1>Profile</h1>
+    <p class="lead">&ldquo;I'm a creative IT Project Manager&ldquo; </p>
+    <hr>
+    <div class="col-md-4">
+      <h3>About me</h3>
+      <p><span class="italic font-color-black"> I'm a young engineer
+      I am all worldwide project manager focused on delivering out-of-the-box solutions.
+      Quick learning. Eager to adapt and to react.
+      I like working in teams</span></p>
+    </div>
+    <div class="col-md-4 text-center">
+      <%= image_tag("profile.jpg", width: '200', height: '200', alt: 'Antoine Petit', class: "profile-image") %>
+    </div>
+    <div class="col-md-4">
+      <h3>Details</h3>
+      <p><span class="italic font-color-black"> <b>Name</b></span></p>
+      <p><span class="italic font-color-black"> Antoine Petit</span></p>
+      <p><span class="italic font-color-black"> <b>Age</b></span></p>
+      <p><span class="italic font-color-black"> 27 years</span></p>
+      <p><span class="italic font-color-black"> <b>Current Location</b></span></p>
+      <p>
+        <%= image_tag("flag_hong_kong.png", width: '20', height: '20', alt: 'Antoine Petit', class: "image") %>
+        <span class="italic font-color-black"> Hong Kong</span>
+      </p>
       </div>
     </div>
+  </div>
 
-    <!-- Profile section
-    ================================================== -->
-    <div id="section-profile">
-      <div class="container">
-        <h1>Profile</h1>
-        <p class="lead">I'm a creative IT Project Manager</p>
-        <hr>
-        <div class="col-md-4">
-          <h3>About me</h3>
-          <p><span class="italic font-color-black"> I'm a young engineer
-          I am all worldwide project manager focused on delivering out-of-the-box solutions.
-          Quick learning. Eager to adapt and to react.
-          I like working in teams</span></p>
-        </div>
-        <div class="col-md-4 text-center">
-          <%= image_tag("profile.jpg", width: '200', height: '200', alt: 'Antoine Petit', class: "profile-image") %>
-        </div>
-        <div class="col-md-4">
-          <h3>Details</h3>
-          <p><span class="italic font-color-black"> <b>Name</b></span></p>
-          <p><span class="italic font-color-black"> Antoine Petit</span></p>
-          <p><span class="italic font-color-black"> <b>Age</b></span></p>
-          <p><span class="italic font-color-black"> 27 years</span></p>
-          <p><span class="italic font-color-black"> <b>Current Location</b></span></p>
-          <p>
-            <%= image_tag("flag_hong_kong.png", width: '20', height: '20', alt: 'Antoine Petit', class: "image") %>
-            <span class="italic font-color-black"> Hong Kong</span>
-          </p>
+<!-- Experience section
+================================================== -->
+<div id="section-experience">
+  <div class="container">
+    <h1>Experiences</h1>
+    <p class="lead"> &ldquo;3 years experience in the financial sector managing IT projects globally &ldquo;</p>
+    <hr>
+    <div class="block">
+      <h2>Education</h2>
+      <div class="experience row">
+      		<div class="col-md-4">
+      			<h4>Telecom Sudparis</h4>
+      			<p class="experience-period">Sept. 2010 - Jul. 2013</p>
+      		</div>
+      		<div class="col-md-8">
+      			<p>
+      				<strong>Master - Management of Information Systems</strong>
+      				<span class="hidden-phone">
+                Master in Information Systems, including general knowledge in IT and Management,
+                new business Start-up and strategic intelligences</span>
+      				<span class="experience-details">
+      					<span class="location">
+                  <%= image_tag("flag_france.png", width: '20', height: '20', alt: 'France', class: "image") %>
+      						Evry					</span>
+      				</span>
+      			</p>
+      		</div>
+      	</div>
+        <div class="experience row">
+            <div class="col-md-4">
+              <h4>National University of Singapore</h4>
+              <p class="experience-period">Aug. 2012 - Dec. 2012</p>
+            </div>
+            <div class="col-md-8">
+              <p>
+                <strong>Non Graduate Program - Management of Information Systems</strong>
+                <span class="hidden-phone">
+                  Master in Information Systems, including general knowledge in IT and Management,
+                  new business Start-up and strategic intelligences</span>
+                <span class="experience-details">
+                  <span class="location">
+                    <%= image_tag("flag_singapore.png", width: '20', height: '20', alt: 'Singapore', class: "image") %>
+                    Singapore					</span>
+                </span>
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-
-    <!-- Experience section
-    ================================================== -->
-    <div id="section-experience">
-      <div class="container">
-        <h1>Experiences</h1>
-        <hr>
-        <div class="block">
-          <h2>Education</h2>
           <div class="experience row">
-          		<div class="col-md-4">
-          			<h4>Telecom Sudparis</h4>
-          			<p class="experience-period">Sept. 2010 - Jul. 2013</p>
-          		</div>
-          		<div class="col-md-8">
-          			<p>
-          				<strong>Master - Management of Information Systems</strong>
-          				<span class="hidden-phone">
+              <div class="col-md-4">
+                <h4>Lycee du Parc</h4>
+                <p class="experience-period">Sept. 2018 - Jul. 2010</p>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  <strong>Classes Preparatoires</strong>
+                  <span class="hidden-phone">
                     Master in Information Systems, including general knowledge in IT and Management,
                     new business Start-up and strategic intelligences</span>
-          				<span class="experience-details">
-          					<span class="location">
+                  <span class="experience-details">
+                    <span class="location">
                       <%= image_tag("flag_france.png", width: '20', height: '20', alt: 'France', class: "image") %>
-          						Evry					</span>
-          				</span>
-          			</p>
-          		</div>
-          	</div>
+                      Lyon					</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <hr>
+
+            <h2>Careers</h2>
             <div class="experience row">
                 <div class="col-md-4">
-                  <h4>National University of Singapore</h4>
-                  <p class="experience-period">Aug. 2012 - Dec. 2012</p>
+                  <h4>HSBC Global Banking and Markets</h4>
+                  <p class="experience-period">Aug. 2015 - Feb. 2016</p>
                 </div>
                 <div class="col-md-8">
                   <p>
-                    <strong>Non Graduate Program - Management of Information Systems</strong>
+                    <strong>Production Support Specialist - Fixed Income IT</strong>
                     <span class="hidden-phone">
-                      Master in Information Systems, including general knowledge in IT and Management,
-                      new business Start-up and strategic intelligences</span>
+                      Responsible for conducting change in the Fixed Income Production Support
+teams globally. It includes analyzing the team’s need, identifying how to
+simplify our monitoring strategy, and implementing these solutions.</span>
                     <span class="experience-details">
                       <span class="location">
-                        <%= image_tag("flag_singapore.png", width: '20', height: '20', alt: 'Singapore', class: "image") %>
-                        Singapore					</span>
+                        <%= image_tag("flag_hong_kong.png", width: '20', height: '20', alt: 'Hong Kong', class: "image") %>
+                        Hong Kong					</span>
                     </span>
                   </p>
                 </div>
               </div>
               <div class="experience row">
                   <div class="col-md-4">
-                    <h4>Lycee du Parc</h4>
-                    <p class="experience-period">Sept. 2018 - Jul. 2010</p>
+                    <h4>HSBC Global Banking and Markets</h4>
+                    <p class="experience-period">Sept. 2014 - Jul. 2015</p>
                   </div>
                   <div class="col-md-8">
                     <p>
-                      <strong>Classes Preparatoires</strong>
+                      <strong>Solution Architect - Fixed Income IT</strong>
                       <span class="hidden-phone">
-                        Master in Information Systems, including general knowledge in IT and Management,
-                        new business Start-up and strategic intelligences</span>
+                        Responsible for aligning technical architecture strategies and execution plans
+to converge towards the desired future state of architecture
+Gather business requirements and select, if necessary, the technologies that
+best fit these requirements
+Assist in the definition of the long-term IT strategy for Fixed Income</span>
                       <span class="experience-details">
                         <span class="location">
-                          <%= image_tag("flag_france.png", width: '20', height: '20', alt: 'France', class: "image") %>
-                          Lyon					</span>
+                          <%= image_tag("flag_hong_kong.png", width: '20', height: '20', alt: 'Hong Kong', class: "image") %>
+                          Hong Kong					</span>
                       </span>
                     </p>
                   </div>
                 </div>
-
-                <hr>
-
-                <h2>Careers</h2>
                 <div class="experience row">
                     <div class="col-md-4">
-                      <h4>Telecom Sudparis</h4>
-                      <p class="experience-period">Sept. 2010 - Jul. 2013</p>
+                      <h4>HSBC Global Banking and Markets</h4>
+                      <p class="experience-period">Feb. 2013 - Jul. 2013</p>
                     </div>
                     <div class="col-md-8">
                       <p>
-                        <strong>Master - Management of Information Systems</strong>
+                        <strong>Project Manager - Fixed Income IT</strong>
                         <span class="hidden-phone">
-                          Master in Information Systems, including general knowledge in IT and Management,
-                          new business Start-up and strategic intelligences</span>
+                          Managing IT Projects in HSBC Fixed Income, principally Valuations & Risk
+system supporting the Rates Derivatives trading</span>
                         <span class="experience-details">
                           <span class="location">
                             <%= image_tag("flag_france.png", width: '20', height: '20', alt: 'France', class: "image") %>
-                            Evry					</span>
+                            Paris					</span>
                         </span>
                       </p>
                     </div>
                   </div>
                   <div class="experience row">
                       <div class="col-md-4">
-                        <h4>National University of Singapore</h4>
-                        <p class="experience-period">Aug. 2012 - Dec. 2012</p>
+                        <h4>SPRINT, Telecom Sudparis Junior Entreprise</h4>
+                        <p class="experience-period">Oct. 2010 - Apr. 2012</p>
                       </div>
                       <div class="col-md-8">
                         <p>
-                          <strong>Non Graduate Program - Management of Information Systems</strong>
+                          <strong>Project Manager</strong>
                           <span class="hidden-phone">
-                            Master in Information Systems, including general knowledge in IT and Management,
-                            new business Start-up and strategic intelligences</span>
+                            MManaging the initiation and development of IT projects, including the
+management of an e-Learning website from business requirement to delivery</span>
                           <span class="experience-details">
                             <span class="location">
-                              <%= image_tag("flag_singapore.png", width: '20', height: '20', alt: 'Singapore', class: "image") %>
-                              Singapore					</span>
+                              <%= image_tag("flag_france.png", width: '20', height: '20', alt: 'France', class: "image") %>
+                              Evry					</span>
                           </span>
                         </p>
                       </div>
                     </div>
-                    <div class="experience row">
-                        <div class="col-md-4">
-                          <h4>Lycee du Parc</h4>
-                          <p class="experience-period">Sept. 2018 - Jul. 2010</p>
-                        </div>
-                        <div class="col-md-8">
-                          <p>
-                            <strong>Classes Preparatoires</strong>
-                            <span class="hidden-phone">
-                              Master in Information Systems, including general knowledge in IT and Management,
-                              new business Start-up and strategic intelligences</span>
-                            <span class="experience-details">
-                              <span class="location">
-                                <%= image_tag("flag_france.png", width: '20', height: '20', alt: 'France', class: "image") %>
-                                Lyon					</span>
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
 
 <!-- Abilities section
 ================================================== -->
-<div id="abilities" class="container">
+<div id="abilities" >
+  <div class="container">
   <h1>Abilities</h1>
-  <p class="lead"> &ldquo;Life without knowledge is death in disguise.&rdquo;<br />- Talib Kweli
-  </p>
+  <p class="lead"> &ldquo;Fast learner, out-of-the-box thinking&rdquo;</p>
   <hr />
   <h3>Skills</h3>
   <div class="row">
@@ -305,17 +329,13 @@
       </ul>
     </div>
   </div>
-  <div class="text-center project-referal">
-    <p>This project is build on a custom made PHP framework.</p>
-    <a href="https://github.com/pascalvgemert/resume" class="btn btn-primary" target="_blank">See project on Github</a>
-  </div>
   <hr />
   <h3>Languages</h3>
   <div class="row">
     <div class="col-md-6">
       <ul class="no-bullets">
         <li>
-          <span class="ability-title">Dutch (Mother tongue)</span>
+          <span class="ability-title">French (Mother tongue)</span>
           <span class="ability-score">
             <span class="glyphicon glyphicon-star filled"></span>
             <span class="glyphicon glyphicon-star filled"></span>
@@ -339,20 +359,10 @@
     <div class="col-md-6">
       <ul class="no-bullets">
         <li>
-          <span class="ability-title">German (Survivable)</span>
+          <span class="ability-title">Chinese Mandarin (Survivable)</span>
           <span class="ability-score">
           <span class="glyphicon glyphicon-star filled"></span>
           <span class="glyphicon glyphicon-star filled"></span>
-          <span class="glyphicon glyphicon-star "></span>
-          <span class="glyphicon glyphicon-star "></span>
-          <span class="glyphicon glyphicon-star "></span>
-          </span>
-        </li>
-        <li>
-          <span class="ability-title">French (Un petit peu)</span>
-          <span class="ability-score">
-          <span class="glyphicon glyphicon-star filled"></span>
-          <span class="glyphicon glyphicon-star "></span>
           <span class="glyphicon glyphicon-star "></span>
           <span class="glyphicon glyphicon-star "></span>
           <span class="glyphicon glyphicon-star "></span>
@@ -361,27 +371,31 @@
       </ul>
     </div>
   </div>
+  <hr />
+  <div class="text-center">
+    <p>This project is build using Ruby on Rails</p>
+    <a href="https://github.com/AntoinePetit24/resume" class="btn btn-primary" target="_blank">See project on Github</a>
+  </div>
+</div>
 </div>
 
 <!-- Footer section
 ================================================== -->
 <div id="section-contact">
     <div class="container">
-
-        <h2>Contact</h2>
+        <h1>Contact</h1>
         <p class="lead">
-        	&ldquo;If I had asked people what they wanted, they would have said faster horses. &rdquo;<br />- Henry Ford
+        	&rdquo;Contact me anywhere, anytime, anyhow&rdquo;
         </p>
-
         <hr />
-
         <div class="row">
         	<div class="col-md-6">
         		<ul class="no-bullets">
         			<li>
         				<a href="https://hk.linkedin.com/in/antoine-petit-49458127" target="_blank">
         					<span class="icon icon-linkedin"></span>
-        					https://hk.linkedin.com/in/antoine-petit-49458127				</a>
+        					<span>See me on LinkedIn</span>
+                </a>
         			</li>
         		</ul>
         	</div>
@@ -395,8 +409,7 @@
         			<li>
         				<a href="mailto:antoinepetit@live.fr">
         					<span class="icon icon-email"></span>
-        					<span style="unicode-bidi:bidi-override; direction: rtl;">
-        						antoinepetit@live.fr				</span>
+        					<span>antoinepetit@live.fr</span>
         				</a>
         			</li>
         		</ul>

@@ -1,60 +1,22 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-#section-experience .experience {
-    margin-bottom: 20px;
-}
 
-.row {
-    margin-right: -15px;
-    margin-left: -15px;
-}
+// Global variables
+//---------------------------------//
 
-p {
-    margin: 0 0 10px;
-}
+html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; }
+body {font-size: 15px;line-height: 1.64;}
+hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity=20); }
 
-#section-experience .experience p > strong {
-    display: block;
-    padding-top: 8px;
-    margin-bottom: 10px;
-}
+.btn-primary { background-color: #22A39F; border-color: #1c8784; }
+.btn-primary:hover { background-color: #1c8784;  border-color: #1c8784; }
 
-#section-experience .hidden-phone {
-  display: block;
-  margin-bottom: 10px;
-}
-
-
-
-#abilities ul > li .ability-title {
-    display: inline-block;
-    width: 60%;
-}
-
-#abilities ul > li .ability-score {
-    float: right;
-}
-
-#abilities ul > li .ability-score .glyphicon.filled {
-    color: #22A39F;
-}
-#abilities ul > li .ability-score .glyphicon {
-    color: #DFE0E0;
-    font-size: 14px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-
-
-
-html, body {
-    font-family: 'Open Sans', sans-serif !important;
-    height: 100%;
-}
+.icon { display: inline-block; background: url(images/sm_icon_sprite.png) no-repeat; height: 32px; width: 32px; }
+.icon.icon-twitter { background-position: 0px 0px; }
+.icon.icon-linkedin { background-position: 0px -32px; }
+.icon.icon-skype { background-position: 0px -64px; }
+.icon.icon-email { background-position: 0px -96px; }
 
 h1 {
   font-size: 46px;
@@ -73,6 +35,22 @@ h2 {
   line-height: 1.1;
 }
 
+h3 {
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #708090;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif !important;
+  color: #708090;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
 p.lead {
   font-family: 'Open Sans', sans-serif !important;
   text-align: center;
@@ -86,7 +64,76 @@ p.lead {
   line-height: 1.4;
 }
 
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  max-width: 1280px;
+}
+
+.text-center {
+  padding-bottom: 20px;
+}
+
+ul.no-bullets {list-style-type: none;margin: 0px;padding: 0px;}
+
+// Section Experience
+//---------------------------------//
+
+#section-experience .experience {
+    margin-bottom: 20px;
+}
+
+#section-experience .experience p > strong {
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 10px;
+}
+
+#section-experience .hidden-phone {
+  display: block;
+  margin-bottom: 10px;
+}
+
+// Section Abilities
+//---------------------------------//
+
+#abilities {
+    color: #666;
+    background: White;
+    font: normal 16px/26px 'PT Serif', Georgia, serif;
+    padding: 60px 0 20px 0;
+}
+
+#abilities ul > li .ability-title {
+    display: inline-block;
+    width: 60%;
+}
+
+#abilities ul > li .ability-score {
+  display: inline-block;
+  float: right;
+}
+
+#abilities ul > li .ability-score .glyphicon.filled {
+    color: #708090;
+}
+#abilities ul > li .ability-score .glyphicon {
+    color: #DFE0E0;
+    font-size: 14px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; }
+#abilities ul > li:hover { background: #F2F2F2; }
 
 // Section Head
 //---------------------------------//
@@ -110,12 +157,18 @@ p.lead {
 
 #section-head .container {
   color: #fff;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-  max-width: 1280px;
-  padding: 100px 180px;
+  position: absolute;
+  padding: 200px;
   z-index: 10;
+}
+
+#section-head h1 {
+  color: #fff;
+}
+
+#section-head p.lead {
+  text-align: center;
+  color: #fff;
 }
 
 
@@ -129,10 +182,6 @@ p.lead {
     z-index: 100;
     overflow: visible;
     font: normal 16px/24px  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#section-topbar a {
-    color: #fff;
 }
 
 #topbar-inner {
@@ -212,8 +261,7 @@ body .ui-tooltip {
 // Section Profile
 //---------------------------------//
 #section-profile {
-    color: #666;
-    background: #fff;
+    background: White;
     font: normal 16px/26px 'PT Serif', Georgia, serif;
     padding: 60px 0 20px 0;
 }
@@ -223,8 +271,6 @@ body .ui-tooltip {
     padding: 50px 0;
     display: none;
 }
-
-
 
 // Section Experience
 //---------------------------------//
@@ -245,54 +291,19 @@ body .ui-tooltip {
     margin-bottom: 40px;
 }
 
-#section-experience .block.last {
-    margin-bottom: 0px;
-}
+// Section Contact
+//---------------------------------//
 
-
-.box-skill {
-    width: 33%;
-    float: left;
-    position: relative;
-}
-
-.box-skill .box-inner {
-    padding: 20px 25px;
-    background: #111;
-    height: 200px;
-    overflow: hidden;
-}
-
-.box-skill.even .box-inner {
-    background-image: url('../images/alpha/bg_alpha15.png');
-}
-
-.box-skill h4 {
-    color: #fff;
-    font: normal 13px/23px 'museo_slab500', 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-    letter-spacing: 0px;
-}
-
-.box-skill.hoverClass h4 {
-}
-
-.box-skill div > p {
-    color: #fff;
-    font: normal 13px/23px 'museo_slab500', 'Open Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-top: 15px;
-}
-
-.box-skill.hoverClass div > p {
-    display: block;
+#section-contact {
+    background: Gray;
+    font: normal 16px/26px 'PT Serif', Georgia, serif;
+    padding: 60px 0 20px 0;
 }
 
 #section-contact h2, #section-contact .row * {
     color: #222;
 }
 
-#section-contact {
-    color: #666;
-    background: WhiteSmoke;
-    font: normal 16px/26px 'PT Serif', Georgia, serif;
+#section-contact h1, #section-contact p.lead {
+    color: #fff;
 }
