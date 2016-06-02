@@ -19,6 +19,9 @@
   <meta name="description" content="I'm Antoine Petit, a fast learning IT project manager / creative programmer" />
 	<meta name="keywords" content="Antoine Petit, CV, Resume, Project Manager, Web developer, Startup, Interactive CV, Resume, CV, HSBC, Agile, Architect" />
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
   <!-- Mobile Specific Metas
   ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,7 +32,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=" #section-topbar" data-offset="50">
 
 <div class="container-full">
 
@@ -38,9 +41,9 @@
 
 <div id="section-topbar">
     <div id="topbar-inner">
-      <ul id="nav" class="nav">
+      <ul id="nav" class="nav" role="tablist">
         <li class="menu-item">
-          <a id="head" href="#section-head" title="Antoine Petit">
+          <a href="#section-head" title="Antoine Petit">
             <p class="lead">Home</p>
             <!--
             <%= image_tag("icon/icon_profile.png", alt: 'Antoine Petit', class: "image") %>
@@ -48,7 +51,7 @@
           </a>
         </li>
         <li class="menu-item">
-          <a id="profile" href="#section-profile" title="Profile">
+          <a href="#section-profile" title="Profile">
             <p class="lead">Profile</p>
             <!--
             <%= image_tag("icon/icon_works.png", alt: 'Profile', class: "image") %>

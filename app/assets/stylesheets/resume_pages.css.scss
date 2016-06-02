@@ -5,7 +5,7 @@
 // Global variables
 //---------------------------------//
 
-html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; }
+html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; height: 100%; position: relative;}
 body {font-size: 15px;line-height: 1.64;}
 hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity=20); }
 
@@ -156,7 +156,7 @@ ul.no-bullets {list-style-type: none;margin: 0px;padding: 0px;}
 
 #section-topbar p.lead {
   font-size: 18px;
-  color: Silver;
+  color: #fff;
   margin-bottom: 0px;
 }
 
@@ -191,13 +191,14 @@ ul.no-bullets {list-style-type: none;margin: 0px;padding: 0px;}
 }
 
 #section-topbar ul#nav .active a {
-    background: #df4244;
+    background: SlateGray;
     border-left: 1px solid #111;
 }
 
 #section-topbar ul#nav .active a:hover {
-    background: #df4244;
+    background: SlateGray;
 }
+
 @media only screen and (max-width: 460px) {
     #section-topbar ul#nav img {
         width:25px;
@@ -391,22 +392,4 @@ body .ui-tooltip {
   #section-contact input, #section-contact textarea, #section-contact select {
     width: 260px;
   }
-}
-
-/*
- *Scrolling
- */
-
-a[ id= "head" ]:target ~ #section-head div.container-fluid {
-    -webkit-transform: translateY( 0px);
-    transform: translateY( 0px );
-}
-
-a[ id= "profile" ]:target ~ #section-profile div.container{
-    -webkit-transform: translateY( -500px );
-    transform: translateY( -500px );
-}
-a[ id= "Experiences" ]:target ~ #section-experience{
-    -webkit-transform: translateY( -1000px );
-    transform: translateY( -1000px );
 }
