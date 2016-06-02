@@ -13,9 +13,11 @@
   ================================================== -->
   <meta charset="utf-8">
   <title>Antoine Petit | Resume </title>
-  <meta name="description"
-        content="Antoine Petit">
+
+  <meta name="description" content="Antoine Petit">
   <meta name="author" content="Typebig">
+  <meta name="description" content="I'm Antoine Petit, a fast learning IT project manager / creative programmer" />
+	<meta name="keywords" content="Antoine Petit, CV, Resume, Project Manager, Web developer, Startup, Interactive CV, Resume, CV, HSBC, Agile, Architect" />
 
   <!-- Mobile Specific Metas
   ================================================== -->
@@ -25,18 +27,20 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  </head>
+</head>
+
 <body>
 
 <div class="container-full">
 
 <!-- Topbar section
 ================================================== -->
+
 <div id="section-topbar">
     <div id="topbar-inner">
       <ul id="nav" class="nav">
         <li class="menu-item">
-          <a href="#section-head" title="Antoine Petit">
+          <a id="head" href="#section-head" title="Antoine Petit">
             <p class="lead">Home</p>
             <!--
             <%= image_tag("icon/icon_profile.png", alt: 'Antoine Petit', class: "image") %>
@@ -44,7 +48,7 @@
           </a>
         </li>
         <li class="menu-item">
-          <a href="#section-profile" title="Profile">
+          <a id="profile" href="#section-profile" title="Profile">
             <p class="lead">Profile</p>
             <!--
             <%= image_tag("icon/icon_works.png", alt: 'Profile', class: "image") %>
@@ -105,28 +109,42 @@
     <hr>
     <div class="col-md-4">
       <h3>About me</h3>
-      <p><span class="italic font-color-black"> I'm a young engineer
-      I am all worldwide project manager focused on delivering out-of-the-box solutions.
-      Quick learning. Eager to adapt and to react.
-      I like working in teams</span></p>
+      <p><span class="italic font-color-black">
+        A dynamic IT project manager, eager to adapt and to react, focused on delivering out-of-the-box solutions
+         and constantly looking for new things to learn.
+       </span></p>
     </div>
     <div class="col-md-4 text-center">
-      <%= image_tag("profile.jpg", width: '180', height: '220', alt: 'Antoine Petit', class: "profile-image") %>
+      <div class="img_wrapper">
+        <%= image_tag("profile.jpg", alt: 'Antoine Petit', class: "img_profile") %>
+      </div>
     </div>
     <div class="col-md-4">
       <h3>Details</h3>
-      <p><span class="italic font-color-black"> <b>Name</b></span></p>
-      <p><span class="italic font-color-black"> Antoine Petit</span></p>
-      <p><span class="italic font-color-black"> <b>Age</b></span></p>
-      <p><span class="italic font-color-black"> 27 years</span></p>
-      <p><span class="italic font-color-black"> <b>Current Location</b></span></p>
-      <p>
-        <%= image_tag("flag_hong_kong.png", width: '20', height: '20', alt: 'Antoine Petit', class: "image") %>
-        <span class="italic font-color-black"> Hong Kong</span>
-      </p>
+      <div class="col-md-4">
+        <p><span class="italic font-color-black"> <b>Name</b></span></p>
+      </div>
+      <div class="col-md-8">
+        <p><span class="italic font-color-black"> Antoine Petit</span></p>
+      </div>
+      <div class="col-md-4">
+        <p><span class="italic font-color-black"> <b>Age</b></span></p>
+      </div>
+      <div class="col-md-8">
+        <p><span class="italic font-color-black"> 27 years</span></p>
+      </div>
+      <div class="col-md-4">
+        <p><span class="italic font-color-black"> <b>Current Location</b></span></p>
+      </div>
+      <div class="col-md-8">
+        <p>
+          <span class="italic font-color-black"> Hong Kong </span>
+          <%= image_tag("flag_hong_kong.png", width: '20', height: '20', alt: 'Antoine Petit', class: "img_flag") %>
+        </p>
       </div>
     </div>
   </div>
+</div>
 
 <!-- Experience section
 ================================================== -->
@@ -563,6 +581,39 @@
         </div>
 
         <hr />
+
+<div id="contact-warning"></div>
+<!-- // #contact-warning -->
+<div id="contact-success">Your message was successfuly sent, thank you!</div>
+<!-- // #contact-warning -->
+<form name="contactForm" id="contactForm" method="post" action="includes/include.emailSender.php">
+  <fieldset>
+    <label for="contactName">
+      Name <span class="required">*</span>
+    </label>
+    <input name="contactName" id="contactName" size="30" value="" type="text"/>
+    <br/>
+    <label for="contactEmail">
+      Email <span class="required">*</span>
+    </label>
+    <input name="contactEmail" id="contactEmail" size="30" value="" type="text"/>
+    <br/>
+    <label for="contactMessage">
+      Message <span class="required">*</span>
+    </label>
+    <textarea name="contactMessage" id="contactMessage" rows="6" cols="7"></textarea>
+    <br/>
+    <label for="contactCaptcha">
+      <strong>1</strong> + <strong>8</strong> =
+      <span class="required">*</span>
+  </label>
+    <input name="contactCaptcha" id="contactCaptcha" size="30" value="" type="text"/>
+    <input name="contactCaptchaAnswer" id="contactCaptchaAnswer" value="9" type="hidden"/>
+    <br/>
+    <label class="placeholder">&nbsp;</label>
+    <button class="submit">Submit</button>
+  </fieldset>
+</form>
 
 
       </div>

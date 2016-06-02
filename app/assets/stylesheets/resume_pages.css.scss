@@ -9,8 +9,8 @@ html, body { color: #434242; font-family: 'Open Sans', sans-serif !important; he
 body {font-size: 15px;line-height: 1.64;}
 hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity=20); }
 
-.btn-primary { background-color: #22A39F; border-color: #1c8784; }
-.btn-primary:hover { background-color: #1c8784;  border-color: #1c8784; }
+.btn-primary { background-color: SlateGray; border-color: Silver; }
+.btn-primary:hover { background-color: DimGray;  border-color: Silver; }
 
 h1 {
   font-size: 46px;
@@ -93,7 +93,7 @@ ul.no-bullets {list-style-type: none;margin: 0px;padding: 0px;}
   padding: 200px;
   z-index: 10;
 
-  background: no-repeat center fixed image-url('background2.jpg');
+  background: no-repeat center fixed image-url('background3.jpg');
   background-size: cover;
   margin-bottom: 0px;
   background-color: #708090;
@@ -206,7 +206,7 @@ ul.no-bullets {list-style-type: none;margin: 0px;padding: 0px;}
         padding: 12px 12px 12px 12px;
     }
     #section-topbar ul#nav p.lead {
-      font-size: 100%;
+      font-size: 130%;
     }
 }
 
@@ -294,6 +294,32 @@ body .ui-tooltip {
     display: none;
 }
 
+#section-profile .col-md-4 {
+    padding: 0;
+}
+
+#section-profile .img_wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+#section-profile .img_profile {
+  height: 220px;
+  width: 180px;
+  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  -moz-transition: all 0.5s ease; /* Firefox */
+  -ms-transition: all 0.5s ease; /* IE 9 */
+  -o-transition: all 0.5s ease; /* Opera */
+  transition: all 0.5s ease;
+}
+
+#section-profile .img_profile:hover {
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+  transform:scale(1.25);
+}
+
 // Section Experience
 //---------------------------------//
 #section-experience {
@@ -317,7 +343,7 @@ body .ui-tooltip {
 //---------------------------------//
 
 #section-contact {
-    background: #434242;
+    background: #161616;
     font: normal 16px/26px 'PT Serif', Georgia, serif;
     padding: 60px 0 20px 0;
 }
@@ -333,4 +359,54 @@ body .ui-tooltip {
 #section-contact span {
     color: Silver;
     padding-left: 20px;
+}
+
+#section-contact input, #section-contact textarea, #section-contact select {
+    width: 280px;
+    padding: 14px 20px;
+    color: #eee;
+    background: #333;
+    margin: 0 0 35px 0;
+    border: 0;
+    outline: none;
+}
+
+#section-contact button.submit {
+    font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    background: #df4244;
+    padding: 20px 28px;
+    border: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 767px) {
+  #section-contact input, #section-contact textarea, #section-contact select {
+    width: 260px;
+  }
+}
+
+/*
+ *Scrolling
+ */
+
+a[ id= "head" ]:target ~ #section-head div.container-fluid {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+
+a[ id= "profile" ]:target ~ #section-profile div.container{
+    -webkit-transform: translateY( -500px );
+    transform: translateY( -500px );
+}
+a[ id= "Experiences" ]:target ~ #section-experience{
+    -webkit-transform: translateY( -1000px );
+    transform: translateY( -1000px );
 }
