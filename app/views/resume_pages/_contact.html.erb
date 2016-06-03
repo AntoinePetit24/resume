@@ -1,32 +1,42 @@
-<div id="contact-warning"></div>
-<!-- // #contact-warning -->
-<div id="contact-success">Your message was successfuly sent, thank you!</div>
-<!-- // #contact-warning -->
-<form name="contactForm" id="contactForm" method="post" action="includes/include.emailSender.php">
-  <fieldset>
-    <label for="contactName">
-      Name <span class="required">*</span>
-    </label>
-    <input name="contactName" id="contactName" size="30" value="" type="text"/>
-    <br/>
-    <label for="contactEmail">
-      Email <span class="required">*</span>
-    </label>
-    <input name="contactEmail" id="contactEmail" size="30" value="" type="text"/>
-    <br/>
-    <label for="contactMessage">
-      Message <span class="required">*</span>
-    </label>
-    <textarea name="contactMessage" id="contactMessage" rows="6" cols="7"></textarea>
-    <br/>
-    <label for="contactCaptcha">
-      <strong>1</strong> + <strong>8</strong> =
-      <span class="required">*</span>
-  </label>
-    <input name="contactCaptcha" id="contactCaptcha" size="30" value="" type="text"/>
-    <input name="contactCaptchaAnswer" id="contactCaptchaAnswer" value="9" type="hidden"/>
-    <br/>
-    <label class="placeholder">&nbsp;</label>
-    <button class="submit">Submit</button>
-  </fieldset>
-</form>
+<!-- Contact section
+================================================== -->
+<div id="section-contact">
+    <div class="container">
+        <h1>Contact</h1>
+        <p class="lead">
+        	&rdquo;Contact me anywhere, anytime, anyhow&rdquo;
+        </p>
+        <hr />
+        <div class="row">
+        	<div class="col-md-6">
+        		<ul class="no-bullets">
+        			<li>
+        				<a href="https://hk.linkedin.com/in/antoine-petit-49458127" target="_blank">
+        					<%= image_tag("icon/icon_linkedin-32.png", width: '40', height: '40', alt: 'LinkedIn', class: "image") %>
+        					<span>linkedin.com/in/antoine-petit-49458127</span>
+                </a>
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="col-md-6">
+        		<ul class="no-bullets">
+        			<!--<li>
+        				<a href="javascript:void(0);">
+        					<span class="icon icon-skype"></span>
+        					pascalvgemert				</a>
+        			</li>-->
+        			<li>
+        				<a href="mailto:antoinepetit@live.fr">
+                  <%= image_tag("icon/icon_email-32.png", width: '40', height: '40', alt: 'LinkedIn', class: "image") %>
+        					<span>antoinepetit@live.fr</span>
+        				</a>
+        			</li>
+        		</ul>
+        	</div>
+        </div>
+
+        <hr />
+
+
+      </div>
+    </div>
