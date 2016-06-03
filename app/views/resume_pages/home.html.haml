@@ -1,0 +1,31 @@
+!!!
+/[if lt IE 6] <html class="no-js ie6" lang="en">
+/[if lt IE 7] <html class="no-js ie7" lang="en">
+/[if IE 8] <html class="no-js ie8" lang="en">
+/[if IE 9] <html class="no-js ie9" lang="en">
+
+%html{:lang => "en"}
+  %head
+    / Basic Page Needs
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "Antoine Petit", :name => "description"}/
+    %meta{:content => "Typebig", :name => "author"}/
+    %meta{:content => "I'm Antoine Petit, a fast learning IT project manager / creative programmer", :name => "description"}/
+    %meta{:content => "Antoine Petit, CV, Resume, Project Manager, Web developer, Startup, Interactive CV, Resume, CV, HSBC, Agile, Architect", :name => "keywords"}/
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"}
+    %script{:src => "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"}
+
+    / Mobile Specific Metas
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
+
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+  %body{"data-offset" => "50", "data-spy" => "scroll", "data-target" => " #section-topbar"}
+    .container-full
+      %section= render 'resume_pages/topbar'
+      %section= render 'resume_pages/head'
+      %section= render 'resume_pages/profile'
+      %section= render 'resume_pages/experience'
+      %section= render 'resume_pages/abilities'
+      %section= render 'resume_pages/contact'

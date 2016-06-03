@@ -1,0 +1,35 @@
+/Contact section
+/==================================================
+#section-contact
+  .container
+    %h1 Contact
+    %p.lead
+      \”Contact me anywhere, anytime, anyhow”
+    %hr/
+    .row
+      .col-md-6
+        %a{:href => "https://hk.linkedin.com/in/antoine-petit-49458127", :target => "_blank"}
+          = image_tag("icon/icon_linkedin-32.png", width: '30', height: '30', alt: 'LinkedIn', class: "image")
+          %span See me on LinkedIn
+      .col-md-6
+        %a{:href => "mailto:antoinepetit@live.fr"}
+          = image_tag("icon/icon_mail.png", width: '30', height: '30', alt: 'Mail', class: "image")
+          %span antoinepetit@live.fr
+    %hr/
+    .col-md-6
+      %p.recommendation
+        "Antoine has produced a huge amount of work for our architrecture team during the last 18 monts. He's well structured, business focus and knows how to build a solution from a limited number of facts.
+        Before this period, we had also Antoine working in Paris as a junior project manager. Again he was key in the success of some programs thanks to the project planification, he was maintaining and his focus while geting the sign offs from the various stakeholders."
+      %p.recommendation-person
+        Francois Gabillault
+      %p.recommendation-position
+        Fixed Income Derivatives Solutions Architect, HSBC
+    .col-md-6
+      %p.recommendation
+        "I had the chance to work with Antoine at HSBC, who really did well as a project manager.
+        Antoine was very diligent and always happy to help to get things moved forward. I strongly recommend his profile to anyone looking for a motivated and proactive person."
+      %p.recommendation-person
+        Jérémie Revenaz
+      %p.recommendation-position
+        Balance Sheet Management Senior Project Manager, HSBC
+    %hr/

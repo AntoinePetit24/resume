@@ -1,0 +1,41 @@
+/Profile section
+/==================================================
+
+#section-profile
+  .container
+    %h1 Profile
+    %p.lead “I'm a creative IT Project Manager“
+    %hr/
+    .col-md-4
+      %h3 About me
+      %p
+        %span.italic.font-color-black
+          A dynamic IT project manager, eager to adapt and to react, focused on delivering out-of-the-box solutions
+          and constantly looking for new things to learn.
+    .col-md-4.text-center
+      .img_wrapper
+        = image_tag("profile.jpg", alt: 'Antoine Petit', class: "img_profile")
+    .col-md-4
+      %h3 Details
+      .col-md-4
+        %p
+          %span.italic.font-color-black
+            %b Name
+      .col-md-8
+        %p
+          %span.italic.font-color-black Antoine Petit
+      .col-md-4
+        %p
+          %span.italic.font-color-black
+            %b Age
+      .col-md-8
+        %p
+          %span.italic.font-color-black 27 years
+      .col-md-4
+        %p
+          %span.italic.font-color-black
+            %b Current Location
+      .col-md-8
+        %p
+          %span.italic.font-color-black Hong Kong
+          = image_tag("flag_hong_kong.png", width: '20', height: '20', alt: 'Antoine Petit', class: "img_flag")

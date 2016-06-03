@@ -191,12 +191,12 @@ ul.no-bullets {list-style-type: none;margin: 0px;padding: 0px;}
 }
 
 #section-topbar ul#nav .active a {
-    background: SlateGray;
+    background: #999999;
     border-left: 1px solid #111;
 }
 
 #section-topbar ul#nav .active a:hover {
-    background: SlateGray;
+    background: #222;
 }
 
 @media only screen and (max-width: 460px) {
@@ -346,7 +346,7 @@ body .ui-tooltip {
 #section-contact {
     background: #161616;
     font: normal 16px/26px 'PT Serif', Georgia, serif;
-    padding: 60px 0 20px 0;
+    padding: 60px 0 150px 0;
 }
 
 #section-contact h1 {
@@ -362,33 +362,32 @@ body .ui-tooltip {
     padding-left: 20px;
 }
 
-#section-contact input, #section-contact textarea, #section-contact select {
-    width: 280px;
-    padding: 14px 20px;
-    color: #eee;
-    background: #333;
-    margin: 0 0 35px 0;
-    border: 0;
-    outline: none;
+#section-contact a {
+    margin-bottom: 200px;
 }
 
-#section-contact button.submit {
-    font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    display: block;
-    cursor: pointer;
-    color: #fff;
-    background: #df4244;
-    padding: 20px 28px;
-    border: none;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -khtml-border-radius: 3px;
-    border-radius: 3px;
+#section-contact p.recommendation {
+  color: #c0c0c0;
+  font: italic 14px/24px 'museo_slab500', 'PT Serif', Georgia, serif;
+  margin-top: 20px;
+}
+
+#section-contact p.recommendation-person {
+  color: #999999;
+  font: normal 13px/24px 'museo_slab500', 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+  margin-bottom: -2px;
+}
+
+#section-contact p.recommendation-position {
+  color: #646464;
+  font: italic 13px/24px 'museo_slab500', 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
+  #section-contact {
+    padding: 60px 0 0 0;
+  }
   #section-contact input, #section-contact textarea, #section-contact select {
     width: 260px;
   }
