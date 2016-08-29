@@ -79,7 +79,7 @@ p.lead {
   .container{
     padding: 0;
   }
-  .container-top{
+  .container-fluid{
     padding: 0;
   }
 }
@@ -93,7 +93,7 @@ ul.no-bullets {list-style-type: none;margin: 0px;padding: 0px;}
 // Section Head
 //---------------------------------//
 
-#section-head .container-top {
+#section-head .container-fluid {
   position: relative;
   padding: 200px;
   z-index: 10;
